@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulir_donasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="100dp"/>
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Brand -->
+        <EditText
+            android:id="@+id/clothes_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clothes Brand"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Condition -->
+        <Spinner
+            android:id="@+id/clothes_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Type -->
+        <Spinner
+            android:id="@+id/clothes_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Fabric -->
+        <Spinner
+            android:id="@+id/clothes_fabric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Color -->
+        <EditText
+            android:id="@+id/clothes_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clothes Color"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Size -->
+        <Spinner
+            android:id="@+id/clothes_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Clothes Age -->
+        <EditText
+            android:id="@+id/clothes_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How many years have the clothes been worn?"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Permission to Contact -->
+        <CheckBox
+            android:id="@+id/permission_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you have permission to contact you about the clothes?"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Preferred Call Time -->
+        <EditText
+            android:id="@+id/preferred_call_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="When would you like to be called?"
+            android:inputType="datetime"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Upload Photos Label -->
+        <TextView
+            android:id="@+id/upload_photos_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please upload the photos of the clothes."
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Upload Button -->
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse Files"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"/>
+
+        <!-- Drag and Drop Area -->
+        <TextView
+            android:id="@+id/drag_drop_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drag and drop files here\nNo file chosen"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Additional Information -->
+        <EditText
+            android:id="@+id/extra_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Is there any information that you would like to add?"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -2,14 +2,8 @@ package edu.uph.m23si2.reweave_charlene;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentTransaction;
-
-import edu.uph.m23si2.reweave_charlene.ui.login.reweave_login;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,13 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Cek apakah fragment sudah ada, jika belum, tampilkan LoginFragment
+        // Check if the fragment is already added, if not, show FormulirDonasi fragment
         if (savedInstanceState == null) {
-            // Membuat instance dari LoginFragment
-            reweave_login loginFragment = new reweave_login();
-            // Memulai transaksi fragment untuk menggantikan layout container dengan fragment
+            // Create an instance of FormulirDonasi fragment
+            FormulirDonasi formulirDonasiFragment = new FormulirDonasi();
+            // Start a fragment transaction to replace the layout container with the FormulirDonasi fragment
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.fragment_container, loginFragment); // Ganti dengan container fragment di layout
+            transaction.replace(R.id.fragment_container, formulirDonasiFragment); // Replace with the fragment container in the layout
             transaction.commit();
         }
     }
